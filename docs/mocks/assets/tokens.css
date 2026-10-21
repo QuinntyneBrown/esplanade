@@ -1,0 +1,3 @@
+/* The mocks read the design system's tokens: docs/design-system/tokens/tokens.css
+   is the single source of truth. Change values there, never here. */
+@import url("../../design-system/tokens/tokens.css");

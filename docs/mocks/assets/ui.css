@@ -1,0 +1,3 @@
+/* The mocks read the design system's component stylesheet:
+   docs/design-system/assets/components.css. Change components there, never here. */
+@import url("../../design-system/assets/components.css");

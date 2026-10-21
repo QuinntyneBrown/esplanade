@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publish changes · default — Esplanade mocks</title>
+<meta name="mock:kind" content="dialog">
+<meta name="mock:screen" content="publish-site">
+<meta name="mock:state" content="default">
+<meta name="mock:requirements" content="L2-028, L2-029, L2-038">
+<meta name="description" content="Publish changes dialog in default state over Overview.">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<link rel="stylesheet" href="../../assets/ui.css">
+<link rel="stylesheet" href="../../assets/mock.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="has-tabbar" inert aria-hidden="true">
+<header class="topbar">
+  <a class="topbar__brand" href="../../pages/dashboard/default.html"><svg class="icon icon--lg" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/></svg> Esplanade</a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a class="nav-link" href="../../pages/dashboard/default.html" aria-current="page">Overview</a>
+    <a class="nav-link" href="../../pages/pages/default.html">Pages</a>
+    <a class="nav-link" href="../../pages/news/default.html">News</a>
+    <a class="nav-link" href="../../pages/events/default.html">Events</a>
+    <a class="nav-link" href="../../pages/inquiries/default.html">Inquiries <span class="badge badge--count" aria-label="3 unread inquiries">3</span></a>
+    <a class="nav-link" href="../../pages/members/default.html">Members</a>
+    <a class="nav-link" href="../../pages/media/default.html">Media</a>
+    <a class="nav-link" href="../../pages/navigation/default.html">Menus</a>
+    <a class="nav-link" href="../../pages/settings/default.html">Settings</a>
+  </nav>
+  <span class="topbar__spacer"></span>
+  <span class="badge badge--success topbar__status" aria-label="Site status: Harbourview Co-op live">Harbourview Co-op</span>
+  <a class="avatar avatar--sm avatar--sky" href="../../dialogs/account-menu/default.html" aria-label="Account menu for Margaret Chen">M</a>
+</header>
+
+<main id="main" class="container">
+<div class="page-header">
+  <div><h1>Harbourview Co-op</h1><p class="subtitle">5 published pages · 2 draft changes ready</p></div>
+</div>
+<div class="card"><p class="text-muted">Background page content is inert while the modal dialog is open.</p></div>
+</main>
+
+<nav class="tabbar" aria-label="Primary, phone">
+  <a href="../../pages/dashboard/default.html" aria-current="page"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/></svg>Overview</a>
+  <a href="../../pages/pages/default.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>Pages</a>
+  <a href="../../pages/events/default.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Events</a>
+  <a href="../../pages/inquiries/default.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>Inquiries<span class="badge badge--count" aria-label="3 unread inquiries">3</span></a>
+  <a href="../../pages/settings/default.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.3.9a7 7 0 0 0-1.7-1L14.5 3h-5l-.4 2.4a7 7 0 0 0-1.7 1L5.1 5.5l-2 3.4 2 1.5a7 7 0 0 0 0 2l-2 1.5 2 3.4 2.3-.9a7 7 0 0 0 1.7 1l.4 2.4h5l.4-2.4a7 7 0 0 0 1.7-1l2.3.9 2-3.4-2-1.5c.1-.3.1-.7.1-1z"/></svg>Settings</a>
+</nav>
+</div>
+<div class="backdrop" aria-hidden="true"></div>
+<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-title" aria-describedby="dlg-desc">
+  <div class="dialog__panel">
+    <div class="dialog__header">
+      
+      <div class="stack" style="gap: var(--space-1); flex: 1;">
+        <h2 class="dialog__title" id="dlg-title">Publish changes to harbourviewcoop.ca</h2>
+        <p class="text-muted" id="dlg-desc" style="font: var(--text-body-sm);">This updates the live headless API snapshot and notifies the public site.</p>
+      </div>
+      <a class="btn btn--ghost btn--icon" href="../../pages/dashboard/default.html" aria-label="Close dialog">×</a>
+    </div>
+    <div class="dialog__body stack">
+      
+<ul class="list" style="border: var(--border-width-hairline) solid var(--color-border-default); border-radius: var(--radius-md);">
+  <li class="list__item"><span class="badge badge--info">Page</span><div class="list__body"><div class="list__title">Membership &amp; How to Apply</div><div class="list__meta"><code>/membership</code> · Edited by Margaret Chen</div></div></li>
+  <li class="list__item"><span class="badge badge--info">Article</span><div class="list__body"><div class="list__title">Winter Accessibility Upgrades to the Common Room</div><div class="list__meta"><code>/news/winter-accessibility-upgrades</code> · Edited by Ruth Kowalski</div></div></li>
+</ul>
+<div class="field"><label class="field__label" for="pub-note">Release note <span class="optional">(optional)</span></label><input class="input" id="pub-note" type="text" value="Updated 2026 housing charges and winter accessibility article"></div>
+    </div>
+    <div class="dialog__footer">
+      <a class="btn" href="../../pages/dashboard/default.html">Cancel</a><a class="btn btn--primary" href="success.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>Publish 2 changes now</a>
+    </div>
+  </div>
+</div>
+<div class="toast-region" role="status" aria-live="polite"></div>
+<p class="mock-note" style="top: 4.5rem; right: 1rem;">Lists every staged item before publishing to the live delivery endpoint.</p>
+<nav class="mock-bar" aria-label="Mock navigation">
+  <a class="mock-bar__home" href="../../index.html" aria-label="All mocks">⌂</a>
+  <span class="mock-bar__screen">Publish changes</span>
+  <ul class="mock-bar__states"><li><a href="default.html" aria-current="page">default</a></li><li><a href="busy.html">busy</a></li><li><a href="failed.html">failed</a></li><li><a href="success.html">success</a></li></ul>
+  <button type="button" data-theme-toggle aria-pressed="false">☾ Dark</button>
+  <button type="button" data-chrome-toggle aria-label="Hide mock chrome">×</button>
+</nav>
+<script src="../../assets/mock.js"></script>
+</body>
+</html>

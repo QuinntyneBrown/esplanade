@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Esplanade · default — Esplanade mocks</title>
+<meta name="mock:kind" content="page">
+<meta name="mock:screen" content="accept-invite">
+<meta name="mock:state" content="default">
+<meta name="mock:requirements" content="L2-006, L2-036">
+<meta name="description" content="Accept an editor invitation from Margaret Chen to help manage Harbourview Co-op.">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<link rel="stylesheet" href="../../assets/ui.css">
+<link rel="stylesheet" href="../../assets/mock.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<canvas class="aurora" aria-hidden="true"></canvas>
+<main id="main" class="auth-layout">
+  <div class="auth-card stack">
+    <div class="logo" aria-hidden="true"><span class="logo-mark sticker--bob"><img src="../../assets/logo.png" alt="" width="64" height="64"></span></div>
+    <div class="card stack">
+      <h1 style="text-align: center;">Join Harbourview Co-op</h1>
+<p class="text-muted" style="text-align: center;"><strong>Margaret Chen</strong> invited <strong>patsy@harbourviewcoop.ca</strong> as an editor on Esplanade.</p>
+<form class="stack" action="../../pages/dashboard/default.html" method="get" novalidate>
+  <div class="field"><label class="field__label" for="full-name">Your name</label><input class="input" id="full-name" type="text" required autofocus value="Patsy Bell"></div>
+  <div class="field"><label class="field__label" for="role">Co-op board role</label><input class="input" id="role" type="text" readonly value="Treasurer · Editor"></div>
+  <div class="field"><label class="field__label" for="pw">Choose a password</label><div class="field__help" id="pw-help">At least 10 characters.</div><div class="input-group"><input class="input" id="pw" type="password" required aria-describedby="pw-help" value=""><button class="btn btn--ghost btn--icon input-group__btn" type="button" aria-label="Show password" aria-pressed="false"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+  <button class="btn btn--primary btn--lg btn--block" type="submit">Join Esplanade</button>
+</form>
+    </div>
+    <p class="text-caption" style="text-align: center;">Already have an account? <a href="../../pages/sign-in/default.html">Sign in</a></p>
+  </div>
+</main>
+<div class="toast-region" role="status" aria-live="polite"></div>
+<p class="mock-note" style="top: 1.5rem; right: 1rem;">Invitation links work once for 7 days and pre-verify the editor's e-mail address.</p>
+<nav class="mock-bar" aria-label="Mock navigation">
+  <a class="mock-bar__home" href="../../index.html" aria-label="All mocks">⌂</a>
+  <span class="mock-bar__screen">Join Esplanade</span>
+  <ul class="mock-bar__states"><li><a href="default.html" aria-current="page">default</a></li><li><a href="invalid.html">invalid</a></li><li><a href="error.html">error</a></li><li><a href="submitting.html">submitting</a></li></ul>
+  <button type="button" data-theme-toggle aria-pressed="false">☾ Dark</button>
+  <button type="button" data-chrome-toggle aria-label="Hide mock chrome">×</button>
+</nav>
+<script src="../../assets/mock.js"></script>
+<script src="../../assets/aurora.js"></script>
+</body>
+</html>
